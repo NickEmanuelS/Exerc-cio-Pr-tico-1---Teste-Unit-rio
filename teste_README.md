@@ -38,21 +38,25 @@ Os casos de testes são:
 ```python
 def test_lista_vazia(self):
         self.assertEqual(estaOrdenada([]), True)
+output: True
 ```
 2. Lista já ordenada
 ```python
 def test_lista_ordenada(self):
         self.assertEqual(estaOrdenada([1, 2, 3, 4, 5]), True)
+output: True
 ```
 3. Lista não ordenada
 ```python
 def test_lista_nao_ordenada(self):
         self.assertEqual(estaOrdenada([5, 2, 3, 4, 1]), False)
+output: False
 ```
 4. Lista com elementos iguais
 ```python
 def test_lista_com_elementos_iguais(self):
         self.assertEqual(estaOrdenada([1, 1, 1, 1, 1]), True)
+output: True
 ```
 
 # Questão 3
@@ -92,21 +96,25 @@ Os casos de testes são:
 ```python
 def test_zero_celsius(self):
         self.assertEqual(converteTemperatura(0), 32)
+output: True
 ```
 2. 10 graus Celsius
 ```python
 def test_dez_graus_celsius(self):
         self.assertEqual(converteTemperatura(10), 50)
+output: True
 ```
 3. 100 graus Celsius
 ```python
 def test_mil_graus_celsius(self):
         self.assertEqual(converteTemperatura(1000), 1832)
+output: True
 ```
 4. -10 graus Celsius
 ```python
 def test_temperatura_negativa(self):
         self.assertEqual(converteTemperatura(-10), 14)
+output: True
 ```
 
 # Questão 5
@@ -117,21 +125,25 @@ Os casos de testes são:
 ```python
 def test_um_nao_eh_primo(self):
         self.assertFalse(ehPrimo(1))
+output: True
 ```
 2. 2 que é primo
 ```python
 def test_dois_eh_primo(self):
         self.assertTrue(ehPrimo(2))
+output: True
 ```
 3. 3 que é primo
 ```python
 def test_tres_eh_primo(self):
         self.assertTrue(ehPrimo(3))
+output: True
 ```
 4. Um número grande que não é primo
 ```python
 def test_numeros_grandes(self):
         self.assertFalse(ehPrimo(123456789))
+output: True
 ```
 
 # Questão 6
@@ -142,6 +154,7 @@ Os casos de testes são:
 ```python
 def test_lista_vazia(self):
         self.assertTrue(listaOrdenada([]))
+output: True
 ```
 2. Crescente, que está ordenada
 ```python
@@ -152,9 +165,11 @@ def test_lista_crescente(self):
 ```python
 def test_lista_decrescente(self):
         self.assertTrue(listaOrdenada([5,4,3,2,1]), msg="A lista está ordenada")
+output: True
 ```
 4. Não está ordenada
 ```python
 def test_lista_desordenada(self):
         self.assertFalse(listaOrdenada([3,1,5,2,4]), msg="A lista está desordenada")
+output: False
 ```
