@@ -11,18 +11,18 @@ def listaOrdenada ( lista ) :
 import unittest
 
 class TestListaOrdenada(unittest.TestCase):
-    
+    # Teste com lista vazia
     def test_lista_vazia(self):
         self.assertTrue(listaOrdenada([]))
-        
+    # Teste com lista crescente    
     def test_lista_crescente(self):
         self.assertTrue(listaOrdenada([1,2,3,4,5]), msg="A lista está ordenada")
-        
+    # Teste com lista decrescente    
     def test_lista_decrescente(self):
         self.assertTrue(listaOrdenada([5,4,3,2,1]), msg="A lista está ordenada")
-        
+    # Teste com lista desordenada    
     def test_lista_desordenada(self):
-        self.assertFalse(listaOrdenada([3,1,5,2,4]), msg="A lista não está ordenada")
+        self.assertFalse(listaOrdenada([3,1,5,2,4]), msg="A lista está desordenada")
         
 if __name__ == '__main__':
     unittest.main()

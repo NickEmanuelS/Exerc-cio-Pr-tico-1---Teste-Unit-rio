@@ -23,16 +23,16 @@ def ehPrimo(n):
 import unittest
 
 class TestEhPrimo(unittest.TestCase):
-    
+    # Teste com 1
     def test_um_nao_eh_primo(self):
         self.assertFalse(ehPrimo(1))
-        
+    # Teste com 2    
     def test_dois_eh_primo(self):
         self.assertTrue(ehPrimo(2))
-        
+    # Teste com 3    
     def test_tres_eh_primo(self):
         self.assertTrue(ehPrimo(3))
-        
+    # Teste com numero grande    
     def test_numeros_grandes(self):
         self.assertFalse(ehPrimo(123456789))
         

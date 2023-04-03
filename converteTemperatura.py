@@ -8,16 +8,16 @@ def converteTemperatura(celsius):
 import unittest
 
 class TestConverteTemperatura(unittest.TestCase):
-    
+    # Teste com 0Cº 
     def test_zero_celsius(self):
         self.assertEqual(converteTemperatura(0), 32)
-        
+    # Teste com 10Cº    
     def test_dez_graus_celsius(self):
         self.assertEqual(converteTemperatura(10), 50)
-        
-    def test_vinte_graus_celsius(self):
-        self.assertEqual(converteTemperatura(20), 68)
-        
+    # Teste com 1000Cº (numero grande)    
+    def test_mil_graus_celsius(self):
+        self.assertEqual(converteTemperatura(1000), 1832)
+    # Teste com temperatura negativa    
     def test_temperatura_negativa(self):
         self.assertEqual(converteTemperatura(-10), 14)
         
