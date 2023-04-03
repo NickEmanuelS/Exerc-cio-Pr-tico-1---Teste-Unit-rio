@@ -7,6 +7,7 @@ def listaOrdenada ( lista ) :
     return crescente or decrescente
 
 
+#Testes
 import unittest
 
 class TestListaOrdenada(unittest.TestCase):

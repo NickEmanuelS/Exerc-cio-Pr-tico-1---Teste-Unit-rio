@@ -4,7 +4,8 @@ def fatorial(n):
     else:
         return n * fatorial(n-1)
     
-    
+
+#Testes    
 import unittest
 
 class TestFatorial(unittest.TestCase):

@@ -8,7 +8,7 @@ def calculaMedia(lista):
         print("\nA média da lista {} é igual a: {}" . format(lista, media))
         return media
 
-
+#Testes
 import unittest
 
 class TestCalculaMedia(unittest.TestCase):

@@ -16,7 +16,8 @@ def estaOrdenada(test_list):
         print ("A lista", test_list ,"não está ordenada.")
         return False
     
-    
+
+#Testes    
 import unittest
 
 class TestEstaOrdenada(unittest.TestCase):

@@ -4,6 +4,7 @@ def converteTemperatura(celsius):
     return fahrenheit
 
 
+#Testes
 import unittest
 
 class TestConverteTemperatura(unittest.TestCase):

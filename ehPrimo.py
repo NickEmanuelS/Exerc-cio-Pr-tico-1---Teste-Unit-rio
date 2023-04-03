@@ -18,7 +18,8 @@ def ehPrimo(n):
         print("O número "  + str(n)+ " não é primo.")
         return False
     
-    
+
+#Testes    
 import unittest
 
 class TestEhPrimo(unittest.TestCase):
